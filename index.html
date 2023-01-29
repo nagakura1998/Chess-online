@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lib/chessboardjs/css/chessboard-0.3.0.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <h1 id="logo">CHESS ONLINE</h1>
+	<center><div class="mode">
+		<button class="ripple mode-vs-pc">
+			1 VS PC
+			<span class="circle" style="top: 27px; left: 82px;"></span>
+		</button>
+		<button class="ripple mode-vs-guess">
+			1 VS 1 
+			<span class="circle" style="top: 27px; left: 82px;"></span>
+		</button>
+	</div></center>
+    <center><div id = "board-area" class="content-area">
+
+		<div id="info-board">
+			<span id="oppo1-time" class="time"> 00:00 </span>&nbsp;
+			<img id="oppo1-avartar" class="oppo-avt" src="img/guess.png">
+			<img id="vs" src="img/vs.png">
+			<img id="oppo2-avartar" class="oppo-avt mode-pc" src="img/PC.png">&nbsp;&nbsp;
+			<span id="oppo2-time" class="time"> 00:00 </span>
+			<br/>
+			<a href="#" style="font-weight:bold;"> Guess </a><img style="width:16px;" src="./img/chesspieces/wikipedia/wK.png"> VS <a href="#" style="font-weight:bold;"> PC </a><img style="width:16px;" src="./img/chesspieces/wikipedia/bK.png">
+
+		</div>
+		<div id="board" class="board"></div>
+        <div id="move-history" class="move-history">
+        </div>
+		<div id="board-cpanel">
+
+			<button class="btn1 btn-med" id="newGame">
+				<i class="fa fa-gamepad fa-2x" aria-hidden="true"></i> New Game</button>
+
+			<button class="btn1 btn-med" id="resign" >
+				<i class="fa fa-flag-o fa-2x" aria-hidden="true"></i> Resign</button>
+
+			<button class="btn1 btn-med" id="undo" >
+				<i class="fa fa-undo fa-2x" aria-hidden="true"></i> Undo</button>
+
+		</div>
+    </div>
+	</center>
+
+<script src="lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="lib/chessboardjs/js/chess.js"></script>
+<script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
+<script src="script.js"></script>
+<script>
+
+</script>
+</body>
+</html>
